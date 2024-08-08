@@ -1,10 +1,10 @@
 const LandingLayout = ({children}: {children: React.ReactNode}) => {
     return (
-      <main className="h-full bg-[#111827] overflow-auto">
-          <div className="mx-auto max-w-screen-xl h-full w-full">
+      <div className="bg-gradient-to-br from-purple-400 to-fuchsia-500 h-screen">
+          <div>
               {children}
           </div>
-      </main>
+      </div>
     )
 }
 export default LandingLayout
