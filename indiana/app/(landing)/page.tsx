@@ -9,8 +9,11 @@ import { BookType, Trees, WholeWord } from "lucide-react"
                 Visit India With Indiana
             </div>
             <span className="flex flex-col items-center text-slate-800 text-2xl font-extralight">
-               The best traval guide to visit<span><Trees/></span>urban India
+               The best traval guide to visit<span><Trees/></span>Urban India
             </span>
+            <div className="flex flex-col items-center text-pink-600 justify-center text-4xl font-serif font-bold pt-24 pb-10">
+               Coming Soon
+            </div>
          </div>
     )
 }
