@@ -1,5 +1,5 @@
 import LandingNavBar from "@/components/ui/LandingNavbar"
-import { BookType, Trees, WholeWord } from "lucide-react"
+import { Trees } from "lucide-react"
 
  export const landing = () => {
     return (
@@ -11,8 +11,8 @@ import { BookType, Trees, WholeWord } from "lucide-react"
             <span className="flex flex-col items-center text-slate-800 text-2xl font-extralight">
                The best traval guide to visit<span><Trees/></span>Urban India
             </span>
-            <div className="flex flex-col items-center text-pink-600 justify-center text-6xl font-serif font-bold pt-24 pb-10">
-               Coming Soon
+            <div className="flex flex-col items-center text-green-400 justify-center text-6xl font-serif font-bold pt-24 pb-10">
+               Under Devolopment
             </div>
          </div>
     )
