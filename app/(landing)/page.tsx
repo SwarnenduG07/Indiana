@@ -2,7 +2,7 @@ import LandingContent from "@/components/LandingContent"
 import LandingNavBar from "@/components/ui/LandingNavbar"
 import { Trees } from "lucide-react"
 
- export const landing = () => {
+ const landing = () => {
     return (
          <div>
             <LandingNavBar/>
