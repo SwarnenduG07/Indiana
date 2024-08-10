@@ -5,7 +5,7 @@ import { Trees } from "lucide-react"
     return (
          <div>
             <LandingNavBar/>
-            <div className="flex flex-col items-center text-teal-400 justify-center text-4xl font-serif font-bold pt-24 pb-10">
+            <div className="flex flex-col items-center text-teal-400 justify-center lg:text-4xl md:text-3xl text-3xl font-serif font-bold pt-24 pb-10 sm:ml">
                 Visit India With Indiana
             </div>
             <span className="flex flex-col items-center text-slate-800 text-2xl font-extralight">
