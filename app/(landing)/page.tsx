@@ -1,3 +1,4 @@
+import LandingContent from "@/components/LandingContent"
 import LandingNavBar from "@/components/ui/LandingNavbar"
 import { Trees } from "lucide-react"
 
@@ -5,6 +6,7 @@ import { Trees } from "lucide-react"
     return (
          <div>
             <LandingNavBar/>
+            <LandingContent/>
             <div className="flex flex-col items-center text-teal-400 justify-center lg:text-4xl md:text-3xl text-3xl font-serif font-bold pt-24 pb-10 sm:ml">
                 Visit India With Indiana
             </div>
