@@ -1,6 +1,6 @@
 "use client"
 import LandingContent from "@/components/LandingContent";
-import LandingNavBar from "@/components/ui/LandingNavbar";
+import LandingNavBar from "@/components/LandingNavbar";
 import { Trees } from "lucide-react";
 import { Tulpen_One } from "next/font/google";
 import TypewriterComponent from "typewriter-effect";

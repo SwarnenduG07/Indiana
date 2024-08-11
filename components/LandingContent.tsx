@@ -7,22 +7,22 @@ const testimonials = [
     {
         name: "Visit >",
         title: "Explore India destination and activities and plan the trip of lifetime",
-        href: "/dashboad"
+        href: "/visit"
     },
     {
         name: "LIVE AND WORK >",
         title: "Discover what you need to know about living & working and moving to India",
-        href: "/"
+        href: "/liveandwork"
     },
     {
         name: "STUDY >",
         title: "Looking to study or currently studying in India",
-        href: "/"
+        href: "/study"
     },
     {
         name: "MEDICAL>",
         title: "Comne to india and do your Medical checkup in low cost and high qualiy",
-        href: "/"
+        href: "/medical"
     }
 ];
 
