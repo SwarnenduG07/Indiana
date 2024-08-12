@@ -7,26 +7,26 @@ import React from 'react'
 const menu = [
     {
          lable:"Place to visit",
-         href:"/placetovisit"
+         href:"/visit/placetovisit"
     },
     {
         lable:"Things To Do",
-         href:"/thingstodo"
+        href:"/visit/thingstodo"
     },
     {
-        lable:"Place to visit",
-        href:"/Findaccommodation"
+        lable:"Find accommodation",
+        href:"/visit/findaccommodation"
     },
     {
         lable: "Plan Your Trip",
-        href: "/plantrip"
+        href: "/visit/plantrip"
     }
 ]
 
 const MobileSideBar = () => {
     const pathname = usePathname();
   return (
-    <div className='space-y-3 py-4 flex flex-col h-full bg-black'>
+    <div className='space-y-3 py-4 flex flex-col h-full bg-black text-white'>
         <div className="space-y-1">
                   {menu.map((menu  ) => (
                      <Link 
@@ -37,7 +37,7 @@ const MobileSideBar = () => {
                      )}
                      >
                      <div className="flex items-center flex-1">
-                      
+                        {menu.lable}
                      </div>
                      </Link>
                   ))}

@@ -45,7 +45,7 @@ export const VisitnavBar = () => {
             
             <span className="flex items-center space-x-2">
                 <Search className="text-white lg:mr-32 md:mr-28"/>
-                <MobileSheet />
+                <MobileSheet/>
                 
             </span>
         </nav>
