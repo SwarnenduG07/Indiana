@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils"
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import { Search } from "lucide-react";
+import MobileSheet from "./MobileSidebarSheet";
 
 const font = Montserrat({
     weight: "600",
@@ -27,7 +28,7 @@ export const VisitnavBar = () => {
                 </Link>
             </div>
 
-            <div className="flex-grow flex justify-center items-center space-x-6 mr-52">
+            <div className="flex-grow justify-center items-center space-x-6 lg:mr-52 hidden lg:flex">
                 <p className="text-white whitespace-nowrap">
                     Places to Visit
                 </p>
@@ -43,7 +44,8 @@ export const VisitnavBar = () => {
             </div>
             
             <span className="flex items-center space-x-2">
-                <Search className="text-white mr-32"/>
+                <Search className="text-white lg:mr-32 md:mr-28"/>
+                <MobileSheet />
                 
             </span>
         </nav>

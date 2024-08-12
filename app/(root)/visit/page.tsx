@@ -5,6 +5,7 @@ const Visit = () => {
   return (
     <div>
         <VisitnavBar />
+        
         Visit
     </div>
   )
