@@ -6,13 +6,34 @@ import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import { Search } from "lucide-react";
 import MobileSheet from "./MobileSidebarSheet";
+import { usePathname } from "next/navigation";
 
 const font = Montserrat({
     weight: "600",
     subsets: ["latin"]
 });
 
+const route = [
+     {
+        lable: "Places to Visit",
+        href: "/visit/placetovisit",
+     },
+     {
+        lable: "Things To Do",
+        href: "/visit/thingstodo",
+     },
+     {
+        lable: "Find Accommodation",
+        href: "/visit/findaccommodation",
+     },
+     {
+        lable: "Plan Your Trip",
+        href: "/visit/plantrip",
+     }
+]
+
 export const VisitnavBar = () => {
+    const pathname =usePathname()
     return (
         <nav className="p-4 pt-3 bg-transparent flex items-center justify-between border-b-2 bg-zinc-900 border-blue-950">
             <div className="flex items-center">
@@ -28,25 +49,25 @@ export const VisitnavBar = () => {
                 </Link>
             </div>
 
-            <div className="flex-grow justify-center items-center space-x-6 lg:mr-52 hidden lg:flex">
-                <p className="text-white whitespace-nowrap">
-                    Places to Visit
-                </p>
-                <p className="text-white whitespace-nowrap">
-                    Things to Do
-                </p>
-                <p className="text-white whitespace-nowrap">
-                    Find Accommodation
-                </p>
-                <p className="text-white whitespace-nowrap">
-                    Plan Your Trip
-                </p>
+            <div className="flex-grow justify-center items-center gap-x-10 lg:mr-52 hidden lg:flex">
+            {route.map((route  ) => (
+                     <Link 
+                     href={route .href}
+                     key={route  .href}
+                     className={cn("text-sm font-medium cursor-pointer text-white   transition", 
+                        pathname === route   .href ? "text-white bg-blue-800" : ""
+                     )}
+                     >
+                     <div className="">
+                        {route.lable}
+                     </div>
+                     </Link>
+                  ))}
             </div>
             
             <span className="flex items-center space-x-2">
                 <Search className="text-white lg:mr-32 md:mr-28"/>
                 <MobileSheet/>
-                
             </span>
         </nav>
     )
