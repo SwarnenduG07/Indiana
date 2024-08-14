@@ -8,6 +8,12 @@ import { Search } from "lucide-react";
 import MobileSheet from "./MobileSidebarSheet";
 import { usePathname } from "next/navigation";
 import { ModeToggle } from "./DarkMode";
+import PlaceToVisitContent from "./PlaceToVisitContent";
+import ThingsToDo from "./ThingsToDoContent";
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger } from "./ui/navigation-menu";
+import ThingsToDoContent from "./ThingsToDoContent";
+import FindAccommodationContent from "./FindAccommodationContent";
+import PlanYourTripContent from "./PlanYourTripContent";
 
 
 const font = Montserrat({
@@ -15,27 +21,31 @@ const font = Montserrat({
     subsets: ["latin"]
 });
 
-const route = [
-     {
-        lable: "Places to Visit",
+const routes = [
+    {
+        label: "Places to Visit",
         href: "/visit/placetovisit",
-     },
-     {
-        lable: "Things To Do",
+        component: PlaceToVisitContent
+    },
+    {
+        label: "Things To Do",
         href: "/visit/thingstodo",
-     },
-     {
-        lable: "Find Accommodation",
+        component: ThingsToDoContent
+    },
+    {
+        label: "Find Accommodation",
         href: "/visit/findaccommodation",
-     },
-     {
-        lable: "Plan Your Trip",
+        component: FindAccommodationContent
+    },
+    {
+        label: "Plan Your Trip",
         href: "/visit/plantrip",
-     }
+        component: PlanYourTripContent
+    }
 ]
 
 export const VisitnavBar = () => {
-    const pathname =usePathname()
+    const pathname = usePathname();
     return (
         <nav className="p-4 pt-3 bg-transparent flex items-center justify-between border-b-2 bg-zinc-900 border-blue-950">
             <div className="flex items-center">
@@ -51,21 +61,23 @@ export const VisitnavBar = () => {
                 </Link>
             </div>
 
-            <div className="flex-grow justify-center items-center gap-x-10 lg:mr-52 hidden lg:flex">
-            {route.map((route  ) => (
-                     <Link 
-                     href={route .href}
-                     key={route  .href}
-                     className={cn("text-sm font-medium cursor-pointer text-white   transition", 
-                        pathname === route   .href ? "text-white bg-blue-800" : ""
-                     )}
-                     >
-                     <div className="">
-                        {route.lable}
-                     </div>
-                     </Link>
-                  ))}
+            <div className="flex-grow justify-center items-center space-x-10 lg:mr-52 hidden lg:flex">
+                <NavigationMenu>
+                    <NavigationMenuList className="ml-12 space-x-7">
+                        {routes.map((route) => (
+                            <NavigationMenuItem key={route.href}>
+                                <NavigationMenuTrigger className="b">
+                                    {route.label}
+                                </NavigationMenuTrigger>
+                                <NavigationMenuContent>
+                                    <route.component />
+                                </NavigationMenuContent>
+                            </NavigationMenuItem>
+                        ))}
+                    </NavigationMenuList>
+                </NavigationMenu>
             </div>
+
             <span className="flex items-center space-x-2">
                 <Search className="text-white lg:mr-32 md:mr-28"/>
                 <MobileSheet/>
@@ -75,4 +87,4 @@ export const VisitnavBar = () => {
     )
 }
 
-export default  VisitnavBar
+export default VisitnavBar;
