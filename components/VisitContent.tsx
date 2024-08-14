@@ -2,7 +2,9 @@ import React from 'react'
 
 const VisitContent = () => {
   return (
-    <div>VisitContent</div>
+    <div className='text-3xl'>
+         Must-do Indian experiences
+    </div>
   )
 }
 

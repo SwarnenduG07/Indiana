@@ -7,6 +7,8 @@ import Image from "next/image";
 import { Search } from "lucide-react";
 import MobileSheet from "./MobileSidebarSheet";
 import { usePathname } from "next/navigation";
+import { ModeToggle } from "./DarkMode";
+
 
 const font = Montserrat({
     weight: "600",
@@ -64,10 +66,10 @@ export const VisitnavBar = () => {
                      </Link>
                   ))}
             </div>
-            
             <span className="flex items-center space-x-2">
                 <Search className="text-white lg:mr-32 md:mr-28"/>
                 <MobileSheet/>
+                <ModeToggle/>
             </span>
         </nav>
     )
