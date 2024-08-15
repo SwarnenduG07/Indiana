@@ -2,67 +2,14 @@
 import LandingContent from "@/components/LandingContent";
 import LandingNavBar from "@/components/LandingNavbar";
 import { HeroParallax } from "@/components/ui/hero-parallax";
+import { products } from "@/constants";
 import { Trees } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import TypewriterComponent from "typewriter-effect";
 
 
 
-// Client-side code here
-
-
- const products = [
-    
-    {
-        title: "INDIANA",
-        link: "/visitPRO",
-        thumbnail:
-          "/india.png",
-    },
-    {
-        title: "Live And Work",
-        link: "/liveandwork",
-        thumbnail: 
-            "/swastika.svg"
-    },
-    {
-        title: "Visit",
-        link: "/visit",
-        thumbnail:
-          "/india.png",
-    },
-    {
-        title: "Study",
-        link: "/study",
-        thumbnail: 
-            "/swastika.svg"
-    },
-    {
-        title: "Medical >",
-        link: "/medical",
-        thumbnail: 
-            "/swastika.svg"
-    },
-    {
-        title: "Study",
-        link: "/study",
-        thumbnail: 
-            "/swastika.svg"
-    },
-    {
-        title: "Medical >",
-        link: "/medical",
-        thumbnail: 
-            "/swastika.svg"
-    },
-    {
-        title: "Study",
-        link: "/study",
-        thumbnail: 
-            "/swastika.svg"
-    },
-    
-];
+ 
 
 const LandingPage = () => {
     const [isClient, setIsClient] = useState(false);
@@ -72,7 +19,7 @@ const LandingPage = () => {
     }, []);
 
     if (!isClient) {
-        return null; // Or a loading spinner
+        return null; //FOR HYDRATAION ERROR
     }
     
     return (
