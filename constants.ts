@@ -1,3 +1,4 @@
+import { Label } from "@radix-ui/react-dropdown-menu";
 
 export const products = [
     
@@ -51,3 +52,31 @@ export const products = [
     },
     
 ];
+
+
+export  const opsitons = [
+    {
+      label: "Beaches",
+      href: "/visit",
+    },
+    {
+      label: "Cities and Towns",
+      href: "/visit",
+    },
+  ];
+
+
+  export const explore = [
+    {
+      label: "Northean india",
+      href: "/visit",
+    },
+    {
+      label: "Southn India",
+      href: "/visit",
+    },
+    {
+        Label: "Western India",
+        href: "/visit"
+    }
+  ];

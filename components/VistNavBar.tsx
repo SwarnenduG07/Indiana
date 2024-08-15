@@ -8,12 +8,12 @@ import { Search } from "lucide-react";
 import MobileSheet from "./MobileSidebarSheet";
 import { usePathname } from "next/navigation";
 import { ModeToggle } from "./DarkMode";
-import PlaceToVisitContent from "./PlaceToVisitContent";
-import ThingsToDo from "./ThingsToDoContent";
+import PlaceToVisitContent from "./NavbarContents/PlaceToVisitContent";
+import ThingsToDo from "./NavbarContents/ThingsToDoContent";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger } from "./ui/navigation-menu";
-import ThingsToDoContent from "./ThingsToDoContent";
-import FindAccommodationContent from "./FindAccommodationContent";
-import PlanYourTripContent from "./PlanYourTripContent";
+import ThingsToDoContent from "./NavbarContents/ThingsToDoContent";
+import FindAccommodationContent from "./NavbarContents/FindAccommodationContent";
+import PlanYourTripContent from "./NavbarContents/PlanYourTripContent";
 
 
 const font = Montserrat({

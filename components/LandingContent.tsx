@@ -29,17 +29,16 @@ const testimonials = [
 export const LandingContent = () => {
     const router = useRouter();
     return (
-        <div className="px-10 pb-20 bg-blue-950">
+        <div className="px-10 pb-20">
             <h1 className="flex flex-col items-center text-xl font-serif text-pretty font-bold text-emerald-400 pt-4 pb-4">
                OUR OFFICIAL GUIDES
             </h1>
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {testimonials.map((item) => (
                     <Card
-                     
                         onClick={() => router.push(item.href)}
                         key={item.href}
-                        className="bg-[#ffffffe8] border-none text-black lg:h-72 md:h-80 h-48 hover:text-purple-700 cursor-pointer hover:shadow-emerald-600/100"
+                        className="bg-black border-none text-white lg:h-72 md:h-80 h-48 hover:text-purple-700 cursor-pointer hover:shadow-emerald-600/100"
                     >
                         <CardHeader>
                             <CardTitle className="flex items-center gap-x-2 mb-2">
