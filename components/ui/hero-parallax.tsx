@@ -9,6 +9,8 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { SparklesCore } from "./sparkles";
+import { Cover } from "./cover";
 
 export const HeroParallax = ({
   products,
@@ -105,7 +107,7 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-6xl font-bold dark:text-white">
-        INDIA <br/> <h1 className="text-2xl md:text-5xl font-bold dark:text-white">From Adventure to Achievement: India’s All-In-One Solution for Living, Learning, and Healing</h1>
+       <Cover> INDIA</Cover><br/> <h1 className="text-2xl md:text-5xl font-bold dark:text-white">From Adventure to Achievement: India’s All-In-One Solution for Living, Learning, and Healing</h1>
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
       Your Gateway to Adventure, Opportunity, and Wellness: Discover India’s vibrant culture, diverse career prospects, and top-notch healthcare. Embrace new experiences, career growth, and holistic health solutions all in one extraordinary destination.

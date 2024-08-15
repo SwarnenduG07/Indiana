@@ -36,6 +36,7 @@ export const LandingContent = () => {
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {testimonials.map((item) => (
                     <Card
+                     
                         onClick={() => router.push(item.href)}
                         key={item.href}
                         className="bg-[#ffffffe8] border-none text-black lg:h-72 md:h-80 h-48 hover:text-purple-700 cursor-pointer hover:shadow-emerald-600/100"
