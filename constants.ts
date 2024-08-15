@@ -84,7 +84,7 @@ export const opsitons: Opsitons[] = [
       href: "/visit",
     },
     {
-        Label: "Western India",
-        href: "/visit"
+     label: "Western India",
+     href: "/visit"
     }
   ];
