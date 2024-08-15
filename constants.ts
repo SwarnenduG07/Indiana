@@ -1,4 +1,12 @@
-import { Label } from "@radix-ui/react-dropdown-menu";
+ export interface Opsitons {
+  label: string;
+  href: string;
+}
+
+export interface Explore {
+  label: string;
+  href: string;
+}
 
 export const products = [
     
@@ -54,7 +62,7 @@ export const products = [
 ];
 
 
-export  const opsitons = [
+export const opsitons: Opsitons[] = [
     {
       label: "Beaches",
       href: "/visit",
@@ -66,7 +74,7 @@ export  const opsitons = [
   ];
 
 
-  export const explore = [
+  export const explore: Explore[] = [
     {
       label: "Northean india",
       href: "/visit",
