@@ -1,7 +1,8 @@
 "use client"
 
-import { VisitContent } from '@/components/VisitContent'
-import VisitnavBar from '@/components/VistNavBar'
+
+import { VisitContent } from '@/components/visit/VisitContent'
+import VisitnavBar from '@/components/visit/VistNavBar'
 import React from 'react'
 
 const Visit = () => {
