@@ -1,73 +1,132 @@
 "use client";
-import React from 'react'
- 
-import { useRef, useState } from "react";
-
-import { AnimatePresence, motion } from "framer-motion";
-import { cn } from "@/lib/utils";
+import React from 'react';
 import { DirectionAwareHover } from './ui/direction-aware-hover';
-import { BentoGrid, BentoGridItem } from './ui/bento-grid';
+import { LayoutGrid } from './ui/layout-grid';
+import Link from 'next/link';
 
-const ramdom = [
-  {
-    label: "In the mountain",
-    imageUrl: "https://images.unsplash.com/photo-1663765970236-f2acfde22237?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    description: "Indian mountains are best"
-  }
+const visitPlace = [
+  
 ]
 
-
 export const VisitContent = () => {
-  
   return (
     <div>
-    <div className="h-[40rem] relative  flex items-center justify-center">
-      {ramdom.map((item, i) => (
-      <DirectionAwareHover key={i} imageUrl={item.imageUrl}>
-        <p className="font-bold text-xl">{item.label}</p>
-        <p className="font-normal text-sm">{item.description}</p>
-      </DirectionAwareHover>
-   ))}   
-  
-  <BentoGrid className="max-w-4xl mx-auto bg-gre">
-  {items.map((item, i) => (
-    <BentoGridItem
-      key={i}
-      title={item.title}
-      description={item.description}
-      header={item.header}
+       <div className="h-screen py-20 w-full">
+      <LayoutGrid cards={cards} />
+    </div>
+    </div>
+  );
+};
+
+const SkeletonOne = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">
+        House in the woods
+      </p>
+      <p className="font-normal text-base text-white"></p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        A serene and tranquil retreat, this house in the woods offers a peaceful
+        escape from the hustle and bustle of city life.
+      </p>
+    </div>
+  );
+};
  
-      className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-    />
-  ))}
-    </BentoGrid>
-  </div>
- </div>   
-  )
-}
-
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-);
-const items = [
+const SkeletonTwo = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">
+        House above the clouds
+      </p>
+      <p className="font-normal text-base text-white"></p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        Perched high above the world, this house offers breathtaking views and a
+        unique living experience. It&apos;s a place where the sky meets home,
+        and tranquility is a way of life.
+      </p>
+    </div>
+  );
+};
+const SkeletonThree = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">
+        Greens all over
+      </p>
+      <p className="font-normal text-base text-white"></p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
+        perfect place to relax, unwind, and enjoy life.
+      </p>
+    </div>
+  );
+};
+const SkeletonFour = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">
+        Rivers are serene
+      </p>
+      <p className="font-normal text-base text-white"></p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        A house by the river is a place of peace and tranquility. It&apos;s the
+        perfect place to relax, unwind, and enjoy life.
+      </p>
+    </div>
+  );
+};
+const SkeletonFive = () => {
+  return (
+    <div>
+      <Link href="/visi">
+        <p className="font-bold md:text-4xl text-xl text-white">
+          Rivers are serene
+        </p>
+      </Link> 
+      <p className="font-normal text-base text-white"></p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        A house by the river is a place of peace and tranquility. It&apos;s the
+        perfect place to relax, unwind, and enjoy life.
+      </p>
+    </div>
+  );
+};
+ 
+const cards = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
-    imageSrc: "/india.png"
+    id: 1,
+    content: <SkeletonOne />,
+    className: "md:col-span-2",
+    thumbnail:
+      "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
-    imageSrc: "/india.png",
+    id: 2,
+    content: <SkeletonTwo />,
+    className: "col-span-1",
+    thumbnail:
+      "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
-    imageSrc: "/india.png"
+    id: 3,
+    content: <SkeletonThree />,
+    className: "col-span-1",
+    thumbnail:
+      "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-
+  {
+    id: 4,
+    content: <SkeletonFour />,
+    className: "md:col-span-2",
+    thumbnail:
+      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: 4,
+    content: <SkeletonFive />,
+    className: "md:col-span-2",
+    thumbnail:
+      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
 ];
-
