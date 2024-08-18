@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
-import { DirectionAwareHover } from './ui/direction-aware-hover';
-import { LayoutGrid } from './ui/layout-grid';
+import { DirectionAwareHover } from '../ui/direction-aware-hover';
+import { LayoutGrid } from '../ui/layout-grid';
 import Link from 'next/link';
 
 const visitPlace = [
@@ -11,7 +11,8 @@ const visitPlace = [
 export const VisitContent = () => {
   return (
     <div>
-       <div className="h-screen py-20 w-full">
+      <span className='text-6xl font-bold flex flex-col justify-start ml-40 mt-32 '>Must Do Experiences In India</span>
+       <div className="h-screen w-ful">
       <LayoutGrid cards={cards} />
     </div>
     </div>
@@ -21,7 +22,7 @@ export const VisitContent = () => {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
+      <p className="font-bold md:text-4xl text-xl text-white underline">
         House in the woods
       </p>
       <p className="font-normal text-base text-white"></p>
@@ -96,7 +97,7 @@ const SkeletonFive = () => {
 const cards = [
   {
     id: 1,
-    content: <SkeletonOne />,
+    content: <SkeletonOne/>,
     className: "md:col-span-2",
     thumbnail:
       "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

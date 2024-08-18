@@ -5,15 +5,14 @@ import { cn } from "@/lib/utils"
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import { Search } from "lucide-react";
-import MobileSheet from "./MobileSidebarSheet";
+import PlaceToVisitContent from "../NavbarContents/PlaceToVisitContent";
+import ThingsToDoContent from "../NavbarContents/ThingsToDoContent";
+import FindAccommodationContent from "../NavbarContents/FindAccommodationContent";
+import PlanYourTripContent from "../NavbarContents/PlanYourTripContent";
 import { usePathname } from "next/navigation";
-import { ModeToggle } from "./DarkMode";
-import PlaceToVisitContent from "./NavbarContents/PlaceToVisitContent";
-import ThingsToDo from "./NavbarContents/ThingsToDoContent";
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger } from "./ui/navigation-menu";
-import ThingsToDoContent from "./NavbarContents/ThingsToDoContent";
-import FindAccommodationContent from "./NavbarContents/FindAccommodationContent";
-import PlanYourTripContent from "./NavbarContents/PlanYourTripContent";
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger } from "../ui/navigation-menu";
+import MobileSheet from "../MobileSidebarSheet";
+import { ModeToggle } from "../DarkMode";
 
 
 const font = Montserrat({
