@@ -1,4 +1,4 @@
-import { Sessions, opsitons } from '@/constants'
+import { Sessions, PlaaTrip } from '@/constants'
 import React from 'react'
 
 const PlanYourTripContent = () => {
@@ -6,9 +6,9 @@ const PlanYourTripContent = () => {
     <div className="bg-black backdrop-blur-sm text-white mr-72 mb-56">
       <div className="flex justify-between">
         <div className="space-y-4">
-          <div className="font-bold ml-20 mr-56  whitespace-nowrap">Popular places</div>
-          <div className="space-y-2 ml-20">
-            {opsitons.map((option) => (
+          <div className="font-bold ml-20 mr-56  whitespace-nowrap">Plan your Trip</div>
+          <div className="space-y-4 ml-20">
+            {PlaaTrip.map((option) => (
               <div key={option.href}>
                 <a
                   href={option.href}
@@ -16,7 +16,6 @@ const PlanYourTripContent = () => {
                 >
                   {option.label}
                 </a>
-                a
               </div>
             ))}
           </div>

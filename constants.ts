@@ -188,3 +188,26 @@ export const Sessions = [
     month: "September - November"
    },
 ]
+
+export const PlaaTrip = [
+   {
+     label: "Getting Around",
+     href: "/Gettingaround"
+   },
+   {
+     label: "Suggested itineraries",
+     href: "/suggested"
+   },
+   {
+     label: "travel Responsibly",
+     href: "/responsibly"
+   },
+   {
+     label: "Visas and entry Requirements",
+     href: "/visarequirements"
+   },
+   {
+     label: "working holidays",
+     href: "/workingholidays"
+   },
+]
