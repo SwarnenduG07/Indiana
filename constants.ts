@@ -168,23 +168,23 @@ export const Findaccommodation = [
 export const Sessions = [
   {
     label: "Summer",
-    href: "#/summer",
+    href: "/visit/plantrip/summer",
     month :"May to July"
     
    },
    {
     label: "Winter",
-    href: "#/winter",
+    href: "/visit/plantrip/winter",
     month:"December - February"
    },
    {
     label: "Spring",
-    href: "#/spring",
+    href: "/visit/plantrip/spring",
     month: "March - April"
    },
    {
     label: "Autumn",
-    href: "#/autumn",
+    href: "/visit/plantrip/autumn",
     month: "September - November"
    },
 ]
