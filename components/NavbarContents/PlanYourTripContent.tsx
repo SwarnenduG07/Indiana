@@ -1,4 +1,4 @@
-import { explore, opsitons } from '@/constants'
+import { Sessions, opsitons } from '@/constants'
 import React from 'react'
 
 const PlanYourTripContent = () => {
@@ -16,18 +16,22 @@ const PlanYourTripContent = () => {
                 >
                   {option.label}
                 </a>
+                a
               </div>
             ))}
           </div>
         </div>
         <div className="space-y-4">
-          <h2 className="font-bold whitespace-nowrap">Explore all places to visit</h2>
+          <h2 className="font-bold whitespace-nowrap">Sessions to visit</h2>
           <div className="space-y-2">
-            {explore.map((explore) => (
-              <div key={explore.href}>
-                <a href={explore.href} className="cursor-pointer hover:underline whitespace-nowrap">
-                  {explore.label}
+            {Sessions.map((Sessions) => (
+              <div key={Sessions.href}>
+                <a href={Sessions.href} className="cursor-pointer hover:underline whitespace-nowrap">
+                  {Sessions.label}
                 </a>
+                <div className='font-extralight whitespace-nowrap'>
+                  {Sessions.month}
+                </div>
               </div>
             ))}
           </div>
