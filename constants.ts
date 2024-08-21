@@ -67,31 +67,31 @@ export const products = [
 export const opsitons: Opsitons[] = [
     {
       label: "Beaches",
-      href: "/visit",
+      href: "/visit/placetovisit/beaches",
     },
     {
       label: "Cities and Towns",
-      href: "/visit",
+      href: "/visit/placetovisit/cityandtowns",
     },
     {
       label: "Mountains",
-      href: "#/mountains"
+      href: "/visit/placetovisit/mountains"
     },
     {
       label: "National Parks",
-      href: "#/nationalparks"
+      href: "/visit/placetovisit/nationalparks"
     },
     {
       label: "valleys",
-      href: "#/valleys"
+      href: "/visit/placetovisit/vallyes"
     },
     {
       label: "waterfalls",
-      href: "#/waterfalls"
+      href: "/visit/placetovisit/waterfalls"
     },
     {
       label: "Ancient Forts",
-      href: "#/forts"
+      href: "/visit/placetovisit/Ancientforts"
     }
   ];
 
