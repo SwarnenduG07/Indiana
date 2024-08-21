@@ -98,20 +98,24 @@ export const opsitons: Opsitons[] = [
 
   export const explore: Explore[] = [
     {
-      label: "Northean india",
-      href: "/visit",
+      label: "Northean India",
+      href: "/visit/placetovisit/northan",
     },
     {
       label: "Southn India",
-      href: "/visit",
+      href: "/visit/placetovisit/southern",
     },
     {
      label: "Western India",
-     href: "/visit"
+     href: "/visit/placetovisit/western"
+    },
+    {
+     label: "East India",
+     href: "/visit/placetovisit/eastern"
     },
     {
      label: "Central India",
-     href: "/visit"
+     href: "/visit/placetovisit/central"
     }
   ];
 
@@ -119,50 +123,46 @@ export const opsitons: Opsitons[] = [
    
    {
     label: "Star Gadding",
-    href: "#/stargaddig"
+    href: "/visit/thingstodo/stargadding"
    },
    {
     label: "Adrenalin and adventure",
-    href: "#/adventures"
+    href: "/visit/thingstodo/adventures"
    },
    {
     label: "Backpacking",
-    href: "#/backpacking"
+    href: "/visit/thingstodo/backpacking"
    },
    {
-    label: "Camping abd glamping",
-    href: "#/camping"
+    label: "Camping and glamping",
+    href: "/visit/thingstodo/camping"
    },
    {
     label: "Film & tv",
-    href: "#/film"
+    href: "/visit/thingstodo/films"
    },
  ] 
 
 export const Findaccommodation = [
   {
     label:"Apartments",
-    href:"/apartments"
+    href:"/visit/findaccommodation/apartments"
   },
   {
     label:"Hotels",
-    href:"/hotels"
+    href:"/visit/findaccommodation/hotels"
   },
   {
-    label:"Apartments",
-    href:"/Backpackers and hostels"
+    label:"BackPacker",
+    href:"/visit/findaccommodation/backpackers"
   },
   {
     label:"Boutique and lodge",
-    href:"/apartments"
+    href:"/visit/findaccommodation/butiques"
   },
   {
     label:"HomeStays",
-    href:"/HomeStays"
-  },
-  {
-    label:"Camping and Holiday Parks",
-    href:"/camping"
+    href:"/visit/findaccommodation/homestays"
   },
 ] 
 export const Sessions = [
