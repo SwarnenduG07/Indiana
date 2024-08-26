@@ -4,9 +4,6 @@ import { DirectionAwareHover } from '../ui/direction-aware-hover';
 import { LayoutGrid } from '../ui/layout-grid';
 import Link from 'next/link';
 
-const visitPlace = [
-  
-]
 
 export const VisitContent = () => {
   return (
