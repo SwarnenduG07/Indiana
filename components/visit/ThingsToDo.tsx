@@ -10,16 +10,6 @@ interface CardProps {
   images: string[];
 }
 
-const VisitContent = [
-      {
-        title: "",
-        price: "",
-        rating: "",
-        eviewsCount: "",
-        images:""
-        
-      }
-]
 
 const ActivityCard: React.FC<CardProps> = ({ title, price, rating, reviewsCount, badgeText, images }) => {
   return (
@@ -34,7 +24,7 @@ const ActivityCard: React.FC<CardProps> = ({ title, price, rating, reviewsCount,
             className="rounded-tl-lg"
           />
         </div>
-        <div className="w-1/2 h-auto relative">
+        <div className="w-1/2 h-auto relative border-l border-slate-600">
           <Image
             src ="/india.png"
             alt="Activity Image"
@@ -45,8 +35,8 @@ const ActivityCard: React.FC<CardProps> = ({ title, price, rating, reviewsCount,
         </div>
         
       </div>
-      <div className="p-4">
-        <h3 className="text-lg font-bold">{title}</h3>
+      <div className="p-4 bg-slate-400">
+        <h3 className="text-lg font-bold"> Title 1 {title}</h3>
         <p className="text-sm text-gray-600">From {price}</p>
         <div className="flex items-center mt-2">
           <div className="flex items-center">
