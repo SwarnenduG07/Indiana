@@ -25,8 +25,7 @@ export const  LandingNavBar = () => {
                 height={30}
                 className="lg:ml-14 md:ml-14"
                 />
-                <h1 className={cn("text-2xl font-bold text-white ml-1.5", font.className)}>Indiana</h1>
-                
+                <h1 className={cn("text-2xl font-bold text-white ml-1.5", font.className)}>Indiana</h1> 
                 </Link>
             </div>
          </nav>

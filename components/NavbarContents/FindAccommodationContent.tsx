@@ -20,7 +20,6 @@ const FindAccommodation = () => {
             ))}
           </div>
         </div>
-
       </div>
     </div>
   )

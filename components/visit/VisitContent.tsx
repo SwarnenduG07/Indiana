@@ -9,7 +9,7 @@ export const VisitContent = () => {
   return (
     <div>
       <span className='text-6xl font-bold flex flex-col justify-start ml-40 mt-32 '>Must Do Experiences In India</span>
-       <div className="h-screen w-ful">
+       <div className="w-full h-screen">
       <LayoutGrid cards={cards} />
     </div>
     </div>
@@ -19,7 +19,7 @@ export const VisitContent = () => {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white underline">
+      <p className="font-bold md:text-4xl text-xl text-white">
         House in the woods
       </p>
       <p className="font-normal text-base text-white"></p>
@@ -118,7 +118,7 @@ const cards = [
     content: <SkeletonFour />,
     className: "md:col-span-2",
     thumbnail:
-      "https://t4.ftcdn.net/jpg/06/85/71/11/360_F_685711177_sBr8YTiEspA4qmZPTyRnuTjewJYWdXU5.jpg",
+      "https://img.traveltriangle.com/blog/wp-content/uploads/2020/04/Kala_Pathar_Beach_Havelock_Island_Andaman_India.jpg",
   },
   {
     id: 4,

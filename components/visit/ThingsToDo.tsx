@@ -13,6 +13,7 @@ interface CardProps {
 
 const ActivityCard: React.FC<CardProps> = ({ title, price, rating, reviewsCount, badgeText, images }) => {
   return (
+    
     <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-sm">
       <div className="flex ">
         <div className="h-full">
@@ -24,7 +25,7 @@ const ActivityCard: React.FC<CardProps> = ({ title, price, rating, reviewsCount,
             className="rounded-tl-lg"
           />
         </div>
-        <div className="w-1/2 h-auto relative border-l border-slate-600">
+        <div className="w-1/2 h-auto relative border-l border-slate-700">
           <Image
             src ="/india.png"
             alt="Activity Image"
@@ -35,15 +36,15 @@ const ActivityCard: React.FC<CardProps> = ({ title, price, rating, reviewsCount,
         </div>
         
       </div>
-      <div className="p-4 bg-slate-400">
-        <h3 className="text-lg font-bold"> Title 1 {title}</h3>
-        <p className="text-sm text-gray-600">From {price}</p>
+      <div className="p-4 bg-slate-800">
+        <h3 className="text-lg font-bold"> Hello, World! {title}</h3>
+        <p className="text-sm text-gray-400">From {price}</p>
         <div className="flex items-center mt-2">
           <div className="flex items-center">
             {[...Array(5)].map((_, i) => (
               <svg
                 key={i}
-                className={`w-4 h-4 ${i < rating ? 'text-green-500' : 'text-gray-300'}`}
+                className={`w-4 h-4 ${i < rating ? 'text-green-500' : 'text-gray-400'}`}
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -51,7 +52,7 @@ const ActivityCard: React.FC<CardProps> = ({ title, price, rating, reviewsCount,
               </svg>
             ))}
           </div>
-          <p className="text-sm text-gray-600 ml-2">Based on {reviewsCount} reviews</p>
+          <p className="text-sm text-gray-400 ml-2">Based on {reviewsCount} reviews</p>
         </div>
         <div className="mt-4">
           <span className="inline-block bg-yellow-400 text-white text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide">
