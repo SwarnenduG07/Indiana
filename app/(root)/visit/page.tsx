@@ -12,7 +12,7 @@ const Visit = () => {
     <div>
         <VisitnavBar />
         <VisitContent />
-        <ThingsToDoVisit />
+        <ThingsToDoVisit title={''} price={''} rating={0} reviewsCount={0} badgeText={''} images={[]} />
     </div>
   )
 }
