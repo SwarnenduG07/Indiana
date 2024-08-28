@@ -3,16 +3,16 @@ import React from 'react'
 
 const FindAccommodation = () => {
   return (
-    <div className="bg-black backdrop-blur-sm text-white mr-72 mb-56">
+    <div className="flex gap-12 px-8 py-5 bg-slate-900 backdrop-blur-lg bg-opacity-75">
       <div className="flex justify-between">
         <div className="space-y-4">
-          <div className="font-bold ml-20 mr-56  whitespace-nowrap">Find Accommodation</div>
-          <div className="space-y-2 ml-20">
+          <div className="font-bold text-lg text-cyan-200 whitespace-nowrap">Find Accommodation</div>
+          <div className="space-y-2">
             {Findaccommodation.map((option) => (
               <div key={option.href}>
                 <a
                   href={option.href}
-                  className="cursor-pointer hover:underline whitespace-nowrap"
+                  className="cursor-pointer hover:text-yellow-300 hover:font-semibold whitespace-nowrap"
                 >
                   {option.label}
                 </a>
