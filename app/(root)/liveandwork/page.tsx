@@ -1,8 +1,11 @@
+import LiveNavBar from '@/components/liveandwork/LiveNavBar'
 import React from 'react'
 
 const LiveandWork = () => {
   return (
-    <div>LiveandWork</div>
+    <div>
+      <LiveNavBar />
+    </div>
   )
 }
 
