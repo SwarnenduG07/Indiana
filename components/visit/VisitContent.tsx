@@ -9,7 +9,7 @@ export const VisitContent = () => {
   return (
     <div>
       <span className='text-6xl font-bold flex flex-col justify-start ml-40 mt-32 '>Must Do Experiences In India</span>
-       <div className="h-screen w-ful">
+       <div className="w-full h-screen">
       <LayoutGrid cards={cards} />
     </div>
     </div>
@@ -19,7 +19,7 @@ export const VisitContent = () => {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white underline">
+      <p className="font-bold md:text-4xl text-xl text-white">
         House in the woods
       </p>
       <p className="font-normal text-base text-white"></p>
@@ -97,34 +97,34 @@ const cards = [
     content: <SkeletonOne/>,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://img.veenaworld.com/wp-content/uploads/2023/05/10-Travel-Places-Where-Nature-Takes-Centerstage.jpg",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail:
-      "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://www.vacationstravel.com/wp-content/uploads/2017/07/103_Kerala_Skouatroulio_iStock-534757407x4.jpg",
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
     thumbnail:
-      "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://media2.thrillophilia.com/images/photos/000/082/478/original/1600412455_shutterstock_1084397678.jpg?w=518&h=490&dpr=1.5",
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://img.traveltriangle.com/blog/wp-content/uploads/2020/04/Kala_Pathar_Beach_Havelock_Island_Andaman_India.jpg",
   },
   {
     id: 4,
     content: <SkeletonFive />,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://www.holidify.com/images/bgImages/DARJEELING.jpg",
   },
 ];

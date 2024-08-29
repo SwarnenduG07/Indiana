@@ -46,7 +46,7 @@ const routes = [
 export const VisitnavBar = () => {
     const pathname = usePathname();
     return (
-        <nav className="p-4 pt-3 bg-transparent flex items-center justify-between border-b-2 bg-zinc-900 border-blue-950">
+        <nav className="p-4 pt-3 bg-transparent flex items-center justify-between border-b-2 bg-slate-800 bg-opacity-40 border-blue-950">
             <div className="flex items-center">
                 <Link href="/visit" className="flex items-center">
                     <Image 
@@ -60,7 +60,7 @@ export const VisitnavBar = () => {
                 </Link>
             </div>
 
-            <div className="flex-grow justify-center items-center space-x-10 lg:mr-52 hidden lg:flex">
+            <div className="flex-grow justify-center items-center space-x-10 lg: hidden lg:flex">
                 <NavigationMenu>
                     <NavigationMenuList className="ml-12 space-x-7">
                         {routes.map((route) => (
@@ -77,7 +77,7 @@ export const VisitnavBar = () => {
                 </NavigationMenu>
             </div>
 
-            <span className="flex items-center space-x-2">
+            <span className="flex items-center px-4">
                 <Search className="text-white lg:mr-32 md:mr-28"/>
                 <MobileSheet/>
                 <ModeToggle/>

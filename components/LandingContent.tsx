@@ -38,13 +38,13 @@ export const LandingContent = () => {
                     <Card
                         onClick={() => router.push(item.href)}
                         key={item.href}
-                        className="bg-black border-none text-white lg:h-72 md:h-80 h-48 hover:text-purple-700 cursor-pointer hover:shadow-emerald-600/100"
+                        className="bg-slate-600 bg-opacity-40 backdrop-blur-lg border-none text-white lg:h-72 md:h-80 h-48 hover:text-cyan-400 cursor-pointer hover:shadow-xl hover:shadow-cyan-400"
                     >
                         <CardHeader>
                             <CardTitle className="flex items-center gap-x-2 mb-2">
                                 <div>
                                     <p className="text-kg">{item.name}</p>
-                                    <p className="text-zinc-400 text-sm mt-4 font-sans">{item.title}</p>
+                                    <p className="text-gray-600 text-base mt-4 font-sans">{item.title}</p>
                                 </div>
                             </CardTitle>
                         </CardHeader>

@@ -98,11 +98,11 @@ export const opsitons: Opsitons[] = [
 
   export const explore: Explore[] = [
     {
-      label: "Northean India",
+      label: "Northern India",
       href: "/visit/placetovisit/northan",
     },
     {
-      label: "Southn India",
+      label: "Southern India",
       href: "/visit/placetovisit/southern",
     },
     {
@@ -110,7 +110,7 @@ export const opsitons: Opsitons[] = [
      href: "/visit/placetovisit/western"
     },
     {
-     label: "East India",
+     label: "Eastern India",
      href: "/visit/placetovisit/eastern"
     },
     {
