@@ -1,6 +1,8 @@
 import { explore, Findaccommodation } from '@/constants'
 import React from 'react'
 
+// This is for Visit-Nav-Menu
+
 const FindAccommodation = () => {
   return (
     <div className="flex gap-12 px-8 py-5 bg-slate-900 backdrop-blur-lg bg-opacity-75">
