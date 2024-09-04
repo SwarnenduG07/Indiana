@@ -9,7 +9,6 @@ import PlaceToVisitContent from "../NavbarContents/PlaceToVisitContent";
 import ThingsToDoContent from "../NavbarContents/ThingsToDoContent";
 import FindAccommodationContent from "../NavbarContents/FindAccommodationContent";
 import PlanYourTripContent from "../NavbarContents/PlanYourTripContent";
-import { usePathname } from "next/navigation";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger } from "../ui/navigation-menu";
 import MobileSheet from "../MobileSidebarSheet";
 import { ModeToggle } from "../DarkMode";
@@ -44,7 +43,6 @@ const routes = [
 ]
 
 export const VisitnavBar = () => {
-    const pathname = usePathname();
     return (
         <nav className="p-4 pt-3 bg-transparent flex items-center justify-between border-b-2 bg-slate-800 bg-opacity-40 border-blue-950">
             <div className="flex items-center">
@@ -65,7 +63,7 @@ export const VisitnavBar = () => {
                     <NavigationMenuList className="ml-12 space-x-7">
                         {routes.map((route) => (
                             <NavigationMenuItem key={route.href}>
-                                <NavigationMenuTrigger className="b">
+                                <NavigationMenuTrigger className="bg-slate-600 rounded-full hover:bg-slate-800 px-1 py-1">
                                     {route.label}
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent>

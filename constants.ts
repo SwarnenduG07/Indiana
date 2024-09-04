@@ -13,6 +13,8 @@ export interface Explore {
 export interface LiveNav {
    title: string;
    label: string;
+   component: string;
+   href: string;
    
 }
 
@@ -218,31 +220,43 @@ export const PlaaTrip = [
    },
 ]
 
-const livenav : LiveNav[]= [
+export const livenav : LiveNav[]= [
 
   {
       title: "Choose",
-      label: "India"
+      label: "India",
+      component: "",
+      href: ""
   },
   {
     title: "Move",
-    label : "to India"
+    label : "to India",
+    component: "",
+    href: ""
   },
   {
     title: "Live",
-    label: "in India"
+    label: "in India",
+    component: "",
+    href: ""
   },
   {
     title: "Work",
-    label: "in India"
+    label: "in India",
+    component: "",
+    href: ""
   },
   {
     title: "Study",
-    label: "in India"
+    label: "in India",
+    component: "",
+    href: ""
   },
   {
     title: "Invest & Innovate",
-    label: "in India"
+    label: "in India",
+    component: "",
+    href: ""
   }
    
 ]

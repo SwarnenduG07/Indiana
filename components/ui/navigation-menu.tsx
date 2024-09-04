@@ -41,7 +41,7 @@ NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName
 const NavigationMenuItem = NavigationMenuPrimitive.Item
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex w-max items-center text-white hover:underline"
+  "group inline-flex w-max items-center text-white "
 )
 
 const NavigationMenuTrigger = React.forwardRef<
