@@ -10,6 +10,12 @@ export interface Explore {
   href: string;
 }
 
+export interface LiveNav {
+   title: string;
+   label: string;
+   
+}
+
 export const products = [
     
     {
@@ -210,4 +216,33 @@ export const PlaaTrip = [
      label: "working holidays",
      href: "/workingholidays"
    },
+]
+
+const livenav : LiveNav[]= [
+
+  {
+      title: "Choose",
+      label: "India"
+  },
+  {
+    title: "Move",
+    label : "to India"
+  },
+  {
+    title: "Live",
+    label: "in India"
+  },
+  {
+    title: "Work",
+    label: "in India"
+  },
+  {
+    title: "Study",
+    label: "in India"
+  },
+  {
+    title: "Invest & Innovate",
+    label: "in India"
+  }
+   
 ]
