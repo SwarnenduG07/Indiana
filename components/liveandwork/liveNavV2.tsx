@@ -10,12 +10,12 @@ export const LiveNavV2: React.FC = () => {
                 <NavigationMenu>
                     <NavigationMenuList className="ml-12 space-x-7">
                         {livenav.map((route) => (
-                            <NavigationMenuItem key={route.href}>
+                            <NavigationMenuItem key="">
                                 <NavigationMenuTrigger className="bg-slate-600 rounded-full hover:bg-slate-800 px-1 py-1">
                                     {route.title} {route.label}
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                                    {/* <route.component /> */}
+                                    <route.component />
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
                         ))}

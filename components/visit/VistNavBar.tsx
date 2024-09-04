@@ -63,7 +63,7 @@ export const VisitnavBar = () => {
                     <NavigationMenuList className="ml-12 space-x-7">
                         {routes.map((route) => (
                             <NavigationMenuItem key={route.href}>
-                                <NavigationMenuTrigger className="bg-slate-600 rounded-full hover:bg-slate-800 px-1 py-1">
+                                <NavigationMenuTrigger className="bg-slate-800 rounded-full hover:bg-slate-900 px-1 py-1">
                                     {route.label}
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent>

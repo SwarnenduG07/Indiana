@@ -1,22 +1,8 @@
 import { Label } from "@radix-ui/react-dropdown-menu";
+import { Choose, Explore, LiveNav, Opsitons } from "./types";
+import { MoveIndia } from "./components/liveandwork/navbarContent/MoveIndia";
+import { chooseIndia } from "./components/liveandwork/navbarContent/chooseIndia";
 
- export interface Opsitons {
-  label: string;
-  href: string;
-}
-
-export interface Explore {
-  label: string;
-  href: string;
-}
-
-export interface LiveNav {
-   title: string;
-   label: string;
-   component: string;
-   href: string;
-   
-}
 
 export const products = [
     
@@ -225,38 +211,75 @@ export const livenav : LiveNav[]= [
   {
       title: "Choose",
       label: "India",
-      component: "",
-      href: ""
+      component: chooseIndia,
+      
   },
   {
     title: "Move",
     label : "to India",
-    component: "",
-    href: ""
+    component: MoveIndia,
+    
   },
   {
     title: "Live",
     label: "in India",
-    component: "",
-    href: ""
+    component: chooseIndia,
+    
   },
   {
     title: "Work",
     label: "in India",
-    component: "",
-    href: ""
+    component: chooseIndia,
+    
   },
   {
     title: "Study",
     label: "in India",
-    component: "",
-    href: ""
+    component: chooseIndia,
+    
   },
   {
     title: "Invest & Innovate",
     label: "in India",
-    component: "",
-    href: ""
+    component:MoveIndia,
+    
   }
    
 ]
+
+export const ChooseIndia: Choose[] = [
+        {
+          title: "Balanced Lifistyle",
+          href : "/visit"
+        },
+        {
+          title: "Safe & secure",
+          href : "/visit"
+        },
+        {
+          title: "Family friendly",
+          href : "/visit"
+        },
+        {
+          title: "Clean and Beautiful",
+          href : ""
+        },
+        {
+          title: "A warm WellCome",
+          href : ""
+        },
+        {
+          title: "Compare India",
+          href : ""
+        },
+        {
+          title: "Regions & cities",
+          href : ""
+        },
+        {
+          title: "Low cost",
+          href : ""
+        },
+]
+
+// TODO MOVE LIVE WORK STUDY INVEST TYPES ADDING
