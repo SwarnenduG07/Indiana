@@ -282,4 +282,71 @@ export const ChooseIndia: Choose[] = [
         },
 ]
 
+export const MovetoIndia: Choose[] = [
+   {
+    title: "Visas For India",
+    href: ""
+   },
+   {
+    title: "Before You apply",
+    href: "Before You Live"
+   },
+   {
+    title: "When You Arrive",
+    href: ""
+   },
+   {
+    title: "Access help and Support",
+    href: ""
+   },
+]
+
+
+export const LiveIndia: Choose[] = [
+  {
+    title: "Tips for Setting in",
+    href:""
+  },
+  {
+    title: "Logistics for Getting started",
+    href:""
+  },
+  {
+    title: "Money & tax",
+    href:""
+  },
+  {
+    title: "Housing",
+    href:""
+  },
+  {
+    title: "HealthCare",
+    href:""
+  },
+  {
+    title: "Education and schooling",
+    href:""
+  },
+  {
+    title: "Safety",
+    href:""
+  },
+  {
+    title: "Recreation",
+    href:""
+  },
+  {
+    title: "History & government",
+    href:""
+  },
+  {
+    title: "Hindi language",
+    href:""
+  },
+  {
+    title: "Migrant settlement strategy",
+    href:""
+  },
+]
+
 // TODO MOVE LIVE WORK STUDY INVEST TYPES ADDING
