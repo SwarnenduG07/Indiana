@@ -232,19 +232,6 @@ export const livenav : LiveNav[]= [
     component: chooseIndia,
     
   },
-  {
-    title: "Study",
-    label: "in India",
-    component: chooseIndia,
-    
-  },
-  {
-    title: "Invest & Innovate",
-    label: "in India",
-    component:MoveIndia,
-    
-  }
-   
 ]
 
 export const ChooseIndia: Choose[] = [
@@ -346,6 +333,37 @@ export const LiveIndia: Choose[] = [
   {
     title: "Migrant settlement strategy",
     href:""
+  },
+]
+
+export const WorkIndia: Choose[] = [
+  {
+    title: "Job Market & key industries",
+    href: ""
+  },
+  {
+    title: "Finding & Applying for Jobs",
+    href: ""
+  },
+  {
+    title: "Our IN way of working",
+    href: ""
+  },
+  {
+    title: "Support in the workplace",
+    href: ""
+  },
+  {
+    title: "Employment right",
+    href: ""
+  },
+  {
+    title: "Working Holidays",
+    href: ""
+  },
+  {
+    title: "",
+    href: ""
   },
 ]
 

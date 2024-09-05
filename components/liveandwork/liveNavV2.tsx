@@ -19,9 +19,11 @@ export const LiveNavV2: React.FC = () => {
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
                         ))}
+                        
                     </NavigationMenuList>
                 </NavigationMenu>
             </div>
+            
     </div>
   )
 }
