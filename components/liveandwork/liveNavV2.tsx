@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger } from '../ui/navigation-menu'
 import { livenav } from '@/constants'
+import Link from 'next/link'
 
 
 export const LiveNavV2: React.FC = () => {
@@ -21,6 +22,11 @@ export const LiveNavV2: React.FC = () => {
                         ))}
                         
                     </NavigationMenuList>
+                    <Link href="/liveandwork/studyInIndia">
+                      <div className='bg-slate-600 rounded-full hover:bg-slate-800  px-1 py-1 ml-6'>
+                        Study In India
+                      </div>
+                    </Link> 
                 </NavigationMenu>
             </div>
             
